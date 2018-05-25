@@ -4,9 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Tabela de Conversao de Temperaturas</title>
 </head>
 <body>
 
+<% int tempF;
+out.print("Tabela de Conversao de Temperaturas<br>Celsius   |   Fahreinheit<br>");
+for(int tempC = -40; tempC<=100; tempC+=10)
+{
+	tempF = (9*tempC)+32/5;
+	out.print(tempC+"   |   "+tempF+"<br>");
+}
+%>
 </body>
 </html>
